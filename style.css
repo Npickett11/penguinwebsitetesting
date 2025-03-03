@@ -1,0 +1,265 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #003366;
+}
+
+a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background-color: #003366;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #1e90ff;
+  border-radius: 5px;
+}
+
+/* Main Section */
+main {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Penguin Species Page Styles */
+.penguin-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.penguin-page-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.penguin-page-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 5px;
+}
+
+.penguin-page-header h2 {
+  font-size: 1.5em;
+  font-style: italic;
+  color: #777;
+}
+
+/* Penguin Information Section */
+.penguin-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.penguin-info h2 {
+  font-size: 2em;
+  color: #003366;
+}
+
+.penguin-info p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  max-width: 800px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.penguin-info img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Penguin Stats Section */
+.penguin-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.penguin-stat-card {
+  background-color: #f9f9f9;
+  border: 1px solid #003366;
+  border-radius: 8px;
+  padding: 20px;
+  width: 45%;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.penguin-stat-card h3 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.penguin-stat-card p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Special Section for Interesting Facts */
+.penguin-facts {
+  background-color: #e6f7ff;
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.penguin-facts h2 {
+  font-size: 2.2em;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.penguin-facts ul {
+  list-style-type: disc;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.penguin-facts li {
+  margin-bottom: 10px;
+}
+
+/* Penguin Conservation Section */
+.penguin-conservation {
+  background-color: #d9f7d9;
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.penguin-conservation h2 {
+  font-size: 2.2em;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.penguin-conservation p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.penguin-conservation .conservation-button {
+  background-color: #1e90ff;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.penguin-conservation .conservation-button:hover {
+  background-color: #003366;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 1.1em;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .penguin-info {
+    padding: 15px;
+  }
+
+  .penguin-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .penguin-stat-card {
+    width: 80%;
+  }
+
+  .penguin-facts ul {
+    padding-left: 10px;
+  }
+
+  .penguin-conservation .conservation-button {
+    padding: 12px 25px;
+    font-size: 1em;
+  }
+}
