@@ -106,3 +106,12 @@ penguin_stat div {
 penguin_stat h3 {
     text-align: center;
 }
+
+penguin_info {
+    flex: 2; 
+    padding: 10px;
+}
+
+penguin_info p {
+    font-size: 18px;
+}
