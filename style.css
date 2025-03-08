@@ -1,265 +1,159 @@
-/* Global Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+    font-family: 'Poppins', sans-serif;
+    background-color: #e0f7fa; /* Light blue ocean-like background */
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2, h3 {
-  color: #003366;
-}
-
-a {
-  color: #1e90ff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Header */
+/* HEADER STYLES */
 header {
-  background-color: #003366;
-  padding: 20px;
-  text-align: center;
+    background: #0277bd; /* Deep ocean blue */
+    padding: 15px;
+    text-align: center;
 }
 
 nav ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+    list-style: none;
+    padding: 0;
 }
 
 nav ul li {
-  display: inline-block;
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
-  color: white;
-  font-size: 1.2em;
-  padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  background-color: #1e90ff;
-  border-radius: 5px;
+    color: #ffeb3b; /* Yellow for a fun contrast */
 }
 
-/* Main Section */
+/* MAIN CONTENT */
 main {
-  padding: 40px 20px;
-  text-align: center;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
 }
 
-main h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
+h1 {
+    color: #01579b; /* Dark blue */
 }
 
-main p {
-  font-size: 1.2em;
-  color: #555;
-  line-height: 1.6;
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 
-/* Penguin Species Page Styles */
+/* PENGUIN INFO CONTAINER */
 .penguin-page-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 20px;
-}
-
-.penguin-page-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.penguin-page-header h1 {
-  font-size: 2.5em;
-  margin-bottom: 5px;
-}
-
-.penguin-page-header h2 {
-  font-size: 1.5em;
-  font-style: italic;
-  color: #777;
-}
-
-/* Penguin Information Section */
-.penguin-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 20px;
-  padding: 20px;
-  background-color: #65717d;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.penguin-info h2 {
-  font-size: 2em;
-  color: #003366;
-}
-
-.penguin-info p {
-  font-size: 1.1em;
-  line-height: 1.6;
-  color: #555;
-  max-width: 800px;
-  text-align: justify;
-  margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .penguin-info img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
 
-/* Penguin Stats Section */
+/* STAT CARDS */
 .penguin-stats {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 30px;
-  width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
 .penguin-stat-card {
-  background-color: #f9f9f9;
-  border: 1px solid #003366;
-  border-radius: 8px;
-  padding: 20px;
-  width: 45%;
-  margin-bottom: 20px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background: #81d4fa; /* Soft blue */
+    padding: 15px;
+    border-radius: 10px;
+    width: 40%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .penguin-stat-card h3 {
-  color: #003366;
-  margin-bottom: 10px;
+    color: #01579b;
 }
 
-.penguin-stat-card p {
-  font-size: 1.1em;
-  color: #555;
-}
-
-/* Special Section for Interesting Facts */
-.penguin-facts {
-  background-color: #e6f7ff;
-  padding: 40px 20px;
-  border-radius: 8px;
-  margin-top: 30px;
-  width: 100%;
-  max-width: 1000px;
-  text-align: center;
-}
-
-.penguin-facts h2 {
-  font-size: 2.2em;
-  color: #003366;
-  margin-bottom: 20px;
-}
-
+/* FACTS LIST */
 .penguin-facts ul {
-  list-style-type: disc;
-  text-align: left;
-  margin: 0 auto;
-  padding: 0 20px;
-  font-size: 1.2em;
-  color: #555;
+    list-style: none;
+    padding: 0;
 }
 
 .penguin-facts li {
-  margin-bottom: 10px;
+    background: #4fc3f7;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
 }
 
-/* Penguin Conservation Section */
+/* CONSERVATION SECTION */
 .penguin-conservation {
-  background-color: #d9f7d9;
-  padding: 40px 20px;
-  border-radius: 8px;
-  margin-top: 40px;
-  width: 100%;
-  max-width: 1000px;
-  text-align: center;
+    background: #e1f5fe;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
-.penguin-conservation h2 {
-  font-size: 2.2em;
-  color: #003366;
-  margin-bottom: 20px;
+.conservation-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #0277bd;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
 }
 
-.penguin-conservation p {
-  font-size: 1.1em;
-  color: #555;
-  margin-bottom: 20px;
+.conservation-button:hover {
+    background: #01579b;
 }
 
-.penguin-conservation .conservation-button {
-  background-color: #1e90ff;
-  color: white;
-  padding: 15px 30px;
-  font-size: 1.2em;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.penguin-conservation .conservation-button:hover {
-  background-color: #003366;
-}
-
-/* Footer */
+/* FOOTER */
 footer {
-  background-color: #003366;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-}
-
-footer p {
-  font-size: 1.1em;
-}
-
-/* Responsive Layout */
-@media (max-width: 768px) {
-  .penguin-info {
+    background: #0277bd;
+    color: white;
     padding: 15px;
-  }
-
-  .penguin-stats {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .penguin-stat-card {
-    width: 80%;
-  }
-
-  .penguin-facts ul {
-    padding-left: 10px;
-  }
-
-  .penguin-conservation .conservation-button {
-    padding: 12px 25px;
-    font-size: 1em;
-  }
+    text-align: center;
+    margin-top: 30px;
 }
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.footer-links a {
+    color: #ffeb3b;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
