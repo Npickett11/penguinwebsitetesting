@@ -89,3 +89,20 @@ footer ul {
 .penguin_fact li {
     font-size: 18px;
 }
+
+penguin_stat {
+    display: flex; 
+    justify-content: space-around; 
+    padding: 20px;
+}
+
+penguin_stat div {
+    background-color: #84c9fa; 
+    padding: 20px; 
+    border-radius: 10px; 
+    flex: 1;
+}
+
+penguin_stat h3 {
+    text-align: center;
+}
