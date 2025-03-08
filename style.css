@@ -36,56 +36,17 @@ nav ul li a:hover {
 }
 
 /* PENGUIN TRADING CARD STYLING */
-.penguin-card {
-    background: white;
-    border-radius: 15px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    width: 350px;
-    text-align: center;
-    padding: 20px;
-    margin: 20px auto;
-    position: relative;
-    overflow: hidden;
-}
-
-.penguin-card img {
-    width: 100%;
-    border-radius: 10px;
-    max-height: 200px;
-    object-fit: cover;
-}
-
-.penguin-card h2 {
-    font-size: 22px;
-    margin: 10px 0;
-    color: #0277BD;
-}
-
-.penguin-card .info {
-    font-size: 16px;
-    color: #333;
+footer {
+    background-color: #1E90FF; 
+    color: white; 
+    text-align: center; 
     padding: 10px;
-    text-align: left;
 }
 
-.penguin-card .info strong {
-    color: #01579B;
+footer ul {
+    list-style-type: none; 
+           padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    gap: 15px;
 }
-
-.penguin-card .stats {
-    background: #0277BD;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-/* FLEXBOX LAYOUT TO CENTER CARDS */
-.penguin-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
