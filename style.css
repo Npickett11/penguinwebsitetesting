@@ -71,3 +71,21 @@ footer ul {
 .conservation p {
     font-size: 18px;
 }
+
+.penguin_fact {
+    padding: 20px;
+}
+
+.penguin_fact h2 {
+    text-align: center; 
+    color: #1E90FF;
+}
+
+.penguin_fact ul {
+    list-style-type: none; 
+    padding-left: 0;
+}
+
+.penguin_fact li {
+    font-size: 18px;
+}
