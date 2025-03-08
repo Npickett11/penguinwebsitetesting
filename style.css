@@ -58,102 +58,92 @@ p {
 }
 
 /* PENGUIN INFO CONTAINER */
-.penguin-page-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #87CEEB; /* Sky blue background */
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-.penguin-info img {
-    width: 80%;
-    max-width: 400px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
-}
-
-/* STAT CARDS */
-.penguin-stats {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.penguin-stat-card {
-    background: #81d4fa; /* Soft blue */
-    padding: 15px;
-    border-radius: 10px;
-    width: 40%;
+/* HEADER STRIP */
+.penguin-header {
+    background: #01579b; /* Deep blue header */
+    color: white;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.penguin-stat-card h3 {
+/* TRADING CARD STYLE */
+.penguin-card {
+    background: white;
+    width: 90%;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 5px solid #0277bd; /* Deep blue border */
+}
+
+.penguin-card img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 4px solid #81d4fa; /* Soft blue */
+}
+
+.penguin-card h2 {
     color: #01579b;
+    margin-top: 10px;
 }
 
-/* FACTS LIST */
+/* STATS BOX */
+.penguin-stats {
+    background: #e1f5fe; /* Light blue */
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px 0;
+    text-align: left;
+    font-size: 16px;
+}
+
+.penguin-stats p {
+    margin: 5px 0;
+}
+
+/* FACTS SECTION */
+.penguin-facts {
+    background: #4fc3f7; /* Vibrant blue */
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
 .penguin-facts ul {
     list-style: none;
     padding: 0;
 }
 
 .penguin-facts li {
-    background: #4fc3f7;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 5px 0;
-}
-
-/* CONSERVATION SECTION */
-.penguin-conservation {
-    background: #e1f5fe;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-.conservation-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background: #0277bd;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background 0.3s;
-}
-
-.conservation-button:hover {
-    background: #01579b;
+    padding: 5px 0;
 }
 
 /* FOOTER */
 footer {
-    background: #0277bd;
+    background: #01579b;
     color: white;
     padding: 15px;
     text-align: center;
     margin-top: 30px;
 }
 
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links li {
-    display: inline-block;
-    margin: 5px;
-}
-
-.footer-links a {
-    color: #ffeb3b;
-    text-decoration: none;
-}
-
-.footer-links a:hover {
-    color: white;
 }
 
