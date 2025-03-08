@@ -90,28 +90,60 @@ footer ul {
     font-size: 18px;
 }
 
-penguin_stat {
+.penguin_stat {
     display: flex; 
     justify-content: space-around; 
     padding: 20px;
 }
 
-penguin_stat div {
+.penguin_stat div {
     background-color: #84c9fa; 
     padding: 20px; 
     border-radius: 10px; 
     flex: 1;
 }
 
-penguin_stat h3 {
+.penguin_stat h3 {
     text-align: center;
 }
 
-penguin_info {
+.penguin_info {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px; 
+    background-color: white; 
+    border-radius: 10px; 
+    margin-top: 20px;
+}
+
+.penguin_info .div-one  {
     flex: 2; 
     padding: 10px;
 }
 
-penguin_info p {
+.penguin_info .div-two {
+    flex: 1; 
+    padding: 10px;
+}
+
+.penguin_info p {
     font-size: 18px;
+}
+
+.penguin_info img {
+    idth: 100%; 
+    border-radius: 10px;
+}
+
+.penguin_page {
+    background-color: #f1f1f1; 
+    padding: 20px;
+}
+
+.penguin_page div {
+    background-color: #1E90FF; 
+    color: white; 
+    padding: 20px; 
+    text-align: right; 
+    border-radius: 10px;
 }
