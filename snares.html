@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snares Penguin - Penguin Species</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Base CSS for general styles -->
 </head>
 <body>
     <header>
@@ -20,74 +20,83 @@
     </header>
 
     <main>
-        <section class="penguin-page-container">
-            <div class="penguin-page-header">
+        <section class="penguin-page-container" style="background-color: #f1f1f1; padding: 20px;">
+            <!-- Penguin Header -->
+            <div style="background-color: #1E90FF; color: white; padding: 20px; text-align: center; border-radius: 10px;">
                 <h1>Snares Penguin</h1>
                 <h2>The Island-Dwelling Penguin</h2>
             </div>
 
-            <div class="penguin-info">
-                <img src="images/snares_penguin.jpg" alt="Snares Penguin" />
-                <p>The **Snares Penguin** (*Eudyptes robustus*) is a **small, crested penguin** native to the **Snares Islands** off the southern coast of New Zealand. This species is known for its distinctive **yellow crest feathers** and is one of the most **isolated penguin species**, with the entire population living only on a small group of islands.</p>
+            <div class="penguin-info" style="display: flex; justify-content: space-between; padding: 20px; background-color: white; border-radius: 10px; margin-top: 20px;">
+                <!-- Penguin Image -->
+                <div style="flex: 1; padding: 10px;">
+                    <img src="images/snares_penguin.jpg" alt="Snares Penguin" style="width: 100%; border-radius: 10px;">
+                </div>
 
-                <p>These penguins are **good swimmers** and rely on **krill**, **small fish**, and **squid** as their primary food sources. They breed in **dense, rocky colonies** and are known for their **strong territorial behavior**. Due to their isolated population, they face threats from **introduced predators** and **habitat disturbance**.</p>
+                <!-- Penguin Information -->
+                <div style="flex: 2; padding: 10px;">
+                    <p style="font-size: 18px;">The <strong>Snares Penguin</strong> (*Eudyptes robustus*) is a <strong>small, crested penguin</strong> native to the <strong>Snares Islands</strong> off the southern coast of New Zealand. This species is known for its distinctive <strong>yellow crest feathers</strong> and is one of the most <strong>isolated penguin species</strong>, with the entire population living only on a small group of islands.</p>
+                    <p style="font-size: 18px;">These penguins are <strong>good swimmers</strong> and rely on <strong>krill</strong>, <strong>small fish</strong>, and <strong>squid</strong> as their primary food sources. They breed in <strong>dense, rocky colonies</strong> and are known for their <strong>strong territorial behavior</strong>. Due to their isolated population, they face threats from <strong>introduced predators</strong> and <strong>habitat disturbance</strong>.</p>
+                </div>
             </div>
 
-            <section class="penguin-stats">
-                <div class="penguin-stat">
-                    <h3>Physical Stats</h3>
+            <!-- Penguin Stats Section -->
+            <section style="display: flex; justify-content: space-around; padding: 20px;">
+                <div style="background-color: #84c9fa; padding: 20px; border-radius: 10px; flex: 1;">
+                    <h3 style="text-align: center;">Physical Stats</h3>
                     <p><strong>Height:</strong> 60 cm (24 inches)</p>
                     <p><strong>Weight:</strong> 3.5–5 kg (7.7–11 lbs)</p>
                     <p><strong>Life Expectancy:</strong> 15–20 years</p>
                 </div>
-                <div class="penguin-stat-card">
-                    <h3>Habitat</h3>
+                <div style="background-color: #84c9fa; padding: 20px; border-radius: 10px; flex: 1;">
+                    <h3 style="text-align: center;">Habitat</h3>
                     <p><strong>Location:</strong> Snares Islands, New Zealand</p>
                     <p><strong>Climate:</strong> Subantarctic climate with cool, temperate conditions</p>
                 </div>
             </section>
 
-            <section class="penguin-facts">
-                <h2>Interesting Facts</h2>
-                <ul>
-                    <li>The Snares Penguin is known for its **bright yellow crest** and **distinctive black-and-white plumage**.</li>
-                    <li>It is found only on the **Snares Islands**, making it highly **isolated** and vulnerable to environmental changes.</li>
-                    <li>The species is **territorial**, with each pair maintaining a **small, rocky nesting site**.</li>
-                    <li>They are **excellent swimmers** and dive deep for their food, which mainly consists of **krill and squid**.</li>
+            <!-- Penguin Facts Section -->
+            <section style="padding: 20px;">
+                <h2 style="text-align: center; color: #1E90FF;">Interesting Facts</h2>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li style="font-size: 18px;">The Snares Penguin is known for its <strong>bright yellow crest</strong> and <strong>distinctive black-and-white plumage</strong>.</li>
+                    <li style="font-size: 18px;">It is found only on the <strong>Snares Islands</strong>, making it highly <strong>isolated</strong> and vulnerable to environmental changes.</li>
+                    <li style="font-size: 18px;">The species is <strong>territorial</strong>, with each pair maintaining a <strong>small, rocky nesting site</strong>.</li>
+                    <li style="font-size: 18px;">They are <strong>excellent swimmers</strong> and dive deep for their food, which mainly consists of <strong>krill and squid</strong>.</li>
                 </ul>
             </section>
 
-            <section class="penguin-conservation">
+            <!-- Penguin Conservation Section -->
+            <section style="padding: 20px; background-color: #1E90FF; color: white; text-align: center; border-radius: 0 0 10px 10px;">
                 <h2>Conservation Efforts</h2>
-                <p>The Snares Penguin is currently classified as **Endangered**, primarily due to **habitat disturbance** and threats from **introduced predators**, such as rats. Conservation efforts are focused on **protecting their breeding colonies**, **controlling predators**, and **maintaining the health of their remote island habitat**.</p>
-                <a href="organizations.html" class="conservation-button">Learn More about Conservation</a>
+                <p style="font-size: 18px;">The Snares Penguin is currently classified as <strong>Endangered</strong>, primarily due to <strong>habitat disturbance</strong> and threats from <strong>introduced predators</strong>, such as rats. Conservation efforts are focused on <strong>protecting their breeding colonies</strong>, <strong>controlling predators</strong>, and <strong>maintaining the health of their remote island habitat</strong>.</p>
+                <a href="organizations.html" style="padding: 10px 20px; background-color: #FFFFFF; color: #1E90FF; text-decoration: none; border-radius: 5px; font-size: 18px;">Learn More about Conservation</a>
             </section>
         </section>
     </main>
 
-    <footer>
+    <footer style="background-color: #1E90FF; color: white; text-align: center; padding: 10px;">
         <p>&copy; 2025 Penguin Conservation. All Rights Reserved.</p>
-        <br><p>Penguin species</p>
-        <ul>
-                <li><a href="emperor.html">Emperor Penguin</a></li>
-                <li><a href="king.html">King Penguin</a></li>
-                <li><a href="royal.html">Royal Penguin</a></li>
-                <li><a href="adelie.html">Adélie Penguin</a></li>
-                <li><a href="gentoo.html">Gentoo Penguin</a></li>
-                <li><a href="chinstrap.html">Chinstrap Penguin</a></li>
-                <li><a href="northern_rockhopper.html">Northern Rockhopper Penguin</a></li>
-                <li><a href="macaroni.html">Macaroni Penguin</a></li>
-                <li><a href="yellow-eyed.html">Yellow-eyed Penguin</a></li>
-                <li><a href="fiordland.html">Fiordland Penguin</a></li>
-                <li><a href="snares.html">Snares Penguin</a></li>
-                <li><a href="erect_crested.html">Erect-crested Penguin</a></li>
-                <li><a href="magellanic.html">Magellanic Penguin</a></li>
-                <li><a href="humboldt.html">Humboldt Penguin</a></li>
-                <li><a href="galapagos.html">Galápagos Penguin</a></li>
-                <li><a href="little_blue.html">Little Blue Penguin</a></li>
-                <li><a href="african.html">African Penguin</a></li>
-                <li><a href="southern_rockhopper.html">Southern Rockhopper Penguin</a></li>
-            </ul>
+        <ul style="list-style-type: none; padding: 0; display: flex; justify-content: center; gap: 15px;">
+            <li><a href="emperor.html">Emperor Penguin</a></li>
+            <li><a href="king.html">King Penguin</a></li>
+            <li><a href="royal.html">Royal Penguin</a></li>
+            <li><a href="adelie.html">Adélie Penguin</a></li>
+            <li><a href="gentoo.html">Gentoo Penguin</a></li>
+            <li><a href="chinstrap.html">Chinstrap Penguin</a></li>
+            <li><a href="northern_rockhopper.html">Northern Rockhopper Penguin</a></li>
+            <li><a href="macaroni.html">Macaroni Penguin</a></li>
+            <li><a href="yellow-eyed.html">Yellow-eyed Penguin</a></li>
+            <li><a href="fiordland.html">Fiordland Penguin</a></li>
+            <li><a href="snares.html">Snares Penguin</a></li>
+            <li><a href="erect_crested.html">Erect-crested Penguin</a></li>
+            <li><a href="magellanic.html">Magellanic Penguin</a></li>
+            <li><a href="humboldt.html">Humboldt Penguin</a></li>
+            <li><a href="galapagos.html">Galápagos Penguin</a></li>
+            <li><a href="little_blue.html">Little Blue Penguin</a></li>
+            <li><a href="african.html">African Penguin</a></li>
+            <li><a href="southern_rockhopper.html">Southern Rockhopper Penguin</a></li>
+        </ul>
     </footer>
 </body>
 </html>
