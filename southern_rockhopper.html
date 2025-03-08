@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Southern Rockhopper Penguin - Penguin Species</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- This is still the base CSS for general styles -->
 </head>
 <body>
     <header>
@@ -19,71 +19,69 @@
         </nav>
     </header>
 
-    <main class="penguin-container">
-        <div class="penguin-card">
-            <img src="images/southern_rockhopper.jpg" alt="Southern Rockhopper Penguin">
-            <h2>Southern Rockhopper Penguin</h2>
-            <h3>The Bold Cliff Jumper</h3>
-
-            <div class="info">
-                <p>The Southern Rockhopper Penguin (*Eudyptes chrysocome*) is a **small but feisty** penguin known for its **spiky yellow crest feathers** and its ability to **jump across rocky cliffs** instead of waddling.</p>
-                <p>These penguins are found on **sub-Antarctic islands** around South America, the Falkland Islands, and the Indian Ocean. They are excellent swimmers and divers, primarily feeding on krill, squid, and small fish.</p>
+    <main>
+        <section class="penguin-page-container" style="background-color: #f1f1f1; padding: 20px;">
+            <!-- Penguin Header -->
+            <div style="background-color: #1E90FF; color: white; padding: 20px; text-align: center; border-radius: 10px;">
+                <h1>Southern Rockhopper Penguin</h1>
+                <h2>The Bold Cliff Jumper</h2>
             </div>
 
-            <div class="stats">
-                <h3>Physical Stats</h3>
-                <p><strong>Height:</strong> 45–58 cm (18–23 inches)</p>
-                <p><strong>Weight:</strong> 2–4.5 kg (4.4–10 lbs)</p>
-                <p><strong>Life Expectancy:</strong> 10–15 years</p>
+            <div class="penguin-info" style="display: flex; justify-content: space-between; padding: 20px; background-color: white; border-radius: 10px; margin-top: 20px;">
+                <!-- Penguin Image -->
+                <div style="flex: 1; padding: 10px;">
+                    <img src="images/southern_rockhopper.jpg" alt="Southern Rockhopper Penguin" style="width: 100%; border-radius: 10px;">
+                </div>
+
+                <!-- Penguin Information -->
+                <div style="flex: 2; padding: 10px;">
+                    <p style="font-size: 18px;">The Southern Rockhopper Penguin (*Eudyptes chrysocome*) is a <strong>small but feisty</strong> penguin known for its <strong>spiky yellow crest feathers</strong> and its ability to <strong>jump across rocky cliffs</strong> instead of waddling.</p>
+                    <p style="font-size: 18px;">These penguins are found on <strong>sub-Antarctic islands</strong> around South America, the Falkland Islands, and the Indian Ocean. They are excellent swimmers and divers, primarily feeding on krill, squid, and small fish.</p>
+                </div>
             </div>
 
-            <div class="stats">
-                <h3>Habitat</h3>
-                <p><strong>Location:</strong> Sub-Antarctic islands (Falklands, South America)</p>
-                <p><strong>Climate:</strong> Rocky coastal cliffs with cold waters</p>
-            </div>
+            <!-- Penguin Stats Section -->
+            <section style="display: flex; justify-content: space-around; padding: 20px;">
+                <div style="background-color: #f4f4f4; padding: 20px; border-radius: 10px; flex: 1;">
+                    <h3 style="text-align: center;">Physical Stats</h3>
+                    <p><strong>Height:</strong> 45–58 cm (18–23 inches)</p>
+                    <p><strong>Weight:</strong> 2–4.5 kg (4.4–10 lbs)</p>
+                    <p><strong>Life Expectancy:</strong> 10–15 years</p>
+                </div>
+                <div style="background-color: #f4f4f4; padding: 20px; border-radius: 10px; flex: 1;">
+                    <h3 style="text-align: center;">Habitat</h3>
+                    <p><strong>Location:</strong> Sub-Antarctic islands (Falklands, South America)</p>
+                    <p><strong>Climate:</strong> Rocky coastal cliffs with cold waters</p>
+                </div>
+            </section>
 
-            <div class="penguin-facts">
-                <h3>Interesting Facts</h3>
-                <ul>
-                    <li>Southern Rockhoppers **jump across rocks instead of waddling**.</li>
-                    <li>They are **very aggressive**, often fighting with their sharp beaks.</li>
-                    <li>They have a **distinct red eye** and a **short spiky yellow crest**.</li>
-                    <li>They can dive up to **100 meters (328 feet)** when hunting for food.</li>
+            <!-- Penguin Facts Section -->
+            <section style="padding: 20px;">
+                <h2 style="text-align: center; color: #1E90FF;">Interesting Facts</h2>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li style="font-size: 18px;">Southern Rockhoppers <strong>jump across rocks instead of waddling</strong>.</li>
+                    <li style="font-size: 18px;">They are <strong>very aggressive</strong>, often fighting with their sharp beaks.</li>
+                    <li style="font-size: 18px;">They have a <strong>distinct red eye</strong> and a <strong>short spiky yellow crest</strong>.</li>
+                    <li style="font-size: 18px;">They can dive up to <strong>100 meters (328 feet)</strong> when hunting for food.</li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="penguin-conservation">
-                <h3>Conservation Efforts</h3>
-                <p>Southern Rockhopper Penguins are classified as **Vulnerable**, with their numbers declining due to **climate change, oil spills, and overfishing**. Conservation programs aim to **protect their breeding sites**.</p>
-                <a href="organizations.html" class="conservation-button">Learn More about Conservation</a>
-            </div>
-        </div>
+            <!-- Penguin Conservation Section -->
+            <section style="padding: 20px; background-color: #1E90FF; color: white; text-align: center; border-radius: 0 0 10px 10px;">
+                <h2>Conservation Efforts</h2>
+                <p style="font-size: 18px;">Southern Rockhopper Penguins are classified as <strong>Vulnerable</strong>, with their numbers declining due to <strong>climate change, oil spills, and overfishing</strong>. Conservation programs aim to <strong>protect their breeding sites</strong>.</p>
+                <a href="organizations.html" style="padding: 10px 20px; background-color: #FFFFFF; color: #1E90FF; text-decoration: none; border-radius: 5px; font-size: 18px;">Learn More about Conservation</a>
+            </section>
+        </section>
     </main>
 
-    <footer>
+    <footer style="background-color: #1E90FF; color: white; text-align: center; padding: 10px;">
         <p>&copy; 2025 Penguin Conservation. All Rights Reserved.</p>
-        <br>
-        <p>Penguin Species</p>
-        <ul>
-            <li><a href="emperor.html">Emperor Penguin</a></li>
-            <li><a href="king.html">King Penguin</a></li>
-            <li><a href="royal.html">Royal Penguin</a></li>
-            <li><a href="adelie.html">Adélie Penguin</a></li>
-            <li><a href="gentoo.html">Gentoo Penguin</a></li>
-            <li><a href="chinstrap.html">Chinstrap Penguin</a></li>
-            <li><a href="northern_rockhopper.html">Northern Rockhopper Penguin</a></li>
-            <li><a href="macaroni.html">Macaroni Penguin</a></li>
-            <li><a href="yellow-eyed.html">Yellow-eyed Penguin</a></li>
-            <li><a href="fiordland.html">Fiordland Penguin</a></li>
-            <li><a href="snares.html">Snares Penguin</a></li>
-            <li><a href="erect_crested.html">Erect-crested Penguin</a></li>
-            <li><a href="magellanic.html">Magellanic Penguin</a></li>
-            <li><a href="humboldt.html">Humboldt Penguin</a></li>
-            <li><a href="galapagos.html">Galápagos Penguin</a></li>
-            <li><a href="little_blue.html">Little Blue Penguin</a></li>
-            <li><a href="african.html">African Penguin</a></li>
-            <li><a href="southern_rockhopper.html">Southern Rockhopper Penguin</a></li>
+        <ul style="list-style-type: none; padding: 0; display: flex; justify-content: center; gap: 15px;">
+            <li><a href="emperor.html" style="color: white; text-decoration: none;">Emperor Penguin</a></li>
+            <li><a href="king.html" style="color: white; text-decoration: none;">King Penguin</a></li>
+            <li><a href="adelie.html" style="color: white; text-decoration: none;">Adélie Penguin</a></li>
+            <li><a href="southern_rockhopper.html" style="color: white; text-decoration: none;">Southern Rockhopper Penguin</a></li>
         </ul>
     </footer>
 </body>
